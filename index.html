@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fin-no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <title>Optimal Creation</title>
+</head>
+<body>
+</body>
+
+    <!-- header -->
+    <nav class="container-fluid">
+        <div style="background-color:#31312f;" class="row p-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-5" style="color: #e3a000;">
+                <h2>Event Managment</h2>
+            </div>
+            <div class="col-md-5 text-right" style="color: #e3a000;">
+                <button class="btn btn-light" onclick="openForm()">SignIn</button>
+                <button class="btn btn-light" data-toggle="modal" data-target="#myModal">SignUp</button>
+            </div>
+            <div class="col-md-1"></div>   
+        </div>
+    </nav>
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+         <div class="modal-content">
+  
+            <!-- Modal Header -->
+           <div class="modal-header">
+              <h4 class="modal-title">SignUp Form</h4>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+  
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+            <label for="firstname" >First Name:</label>
+            <input type="text" placeholder="Write Your Full Name Here" class="form-control">
+            <label for="firstname" >Email:</label>
+            <input type="text" placeholder="Write Your Email Here" class="form-control">
+            <label for="phonenum" >Phone No:</label>
+            <input type="text" placeholder="Write Your Phone No. Here" class="form-control">
+            <label for="firstname" >City</label>
+            <select class="form-control">
+                <option>Karachi</option>
+                <option>Lahore</option>
+                <option>Islamabad</option>
+                <option>Faisalabad</option>
+                <option>Multan</option>
+                <option>Hyderabad</option>
+            </select>
+                </div>
+            
+            </div>
+  
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-success" onclick="alert('Successfully Submited!')" data-dismiss="modal">Sumbit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+  
+         </div>
+        </div>
+    </div>
+
+        <!-- slider -->
+        <div id="slider" class="carousel slide" data-ride="carousel">
+
+            <ul class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slider-03.jpg" alt="Event Managment" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider-01.jpg" alt="Event Managment" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider-00.jpg" alt="Event Managment" width="1100" height="500">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#slider" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#slider" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>`
+
+        </div>
+
+        <!-- Our Services -->
+        <section class="container-fluid">
+            <div class="row pb-4">
+                <div class="col text-center">
+                    <h1>Our Best Services For You</h1>
+                </div>
+            </div>
+            <div>
+                <div class="row pt-3">
+                    <div class="col-sm-2"></div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/01.png" alt="Party Hall" >
+                        <p class="sp1">PARTY HALLS</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/02.png" alt="Party Hall">
+                        <p class="sp1">SALOONS</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/03.png" alt="Party Hall">
+                        <p class="sp1">CATERING SERVICES</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/04.png" alt="Party Hall">
+                        <p class="sp1">DRESS DESIGNERS</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-sm-2"></div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/05.png" alt="Party Hall">
+                        <p class="sp1">EVENT ORGANIZER</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/06.png" alt="Party Hall">
+                        <p class="sp1">STAGE DECORATION</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/07.png" alt="Party Hall">
+                        <p class="sp1">LIGHT DECORATION</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img src="./img/service_icon/08.png" alt="Party Hall">
+                        <p class="sp1">RENT A CAR</p>
+                        <p class="sp2">35 Events | 15 Service Providers</p>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Book Services -->
+        <section class="container-fluid" style="background-image: url(./img/howitworks/bg.png);">
+            <div class="row my-5"></div>
+            <div class="row my-5"></div>
+            <div class="row mt-3">
+                <div class="col-sm-1"></div>
+                <div class="col-md-6 p-4 text-center" style="color:white">
+                    <h2>How Book Services?</h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-sm-4 text-center pb-0 pt-5" style="color:white">
+                    <h3>Watch Video</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 text-center" style="color:white">
+                    <img src="./img/howitworks/search.png" alt="search">
+                    <h5>Search Services</h5>
+                    <p style="font-weight: lighter ; font-size:small;">Search, review, short list and share the Best Banquet Halls, Party Halls near you</p>
+                </div>
+                <div class="col-md-2 text-center" style="color:white">
+                    <img src="./img/howitworks/qoute.png" alt="search">
+                    <h5>Request Quote</h5>
+                    <p style="font-weight: lighter ; font-size:small;">Get multiple competing free quotes from Banquet Hall and Party Hall owners</p>
+                </div>
+                <div class="col-md-2 text-center" style="color:white">
+                    <img src="./img/howitworks/search.png" alt="search">
+                    <h5>Book a Service</h5>
+                    <p style="font-weight: lighter ; font-size:small;">Select a quote that best fits your needs and book or reserve a Banquet Hall of your choice</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <img src="./img/howitworks/screen.png" alt="Screen">
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="container-fluid" style="background-color:#31312f;color: white;">
+            <div class="row pt-5" >
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <h5 style="line-height: 3;">Our Story</h5>
+                    <p style="font-size: small;">About us</p>
+                    <p style="font-size: small;">Team</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 style="line-height: 3;">Get Inspired</h5>
+                    <p style="font-size: small;">Testimonial</p>
+                    <p style="font-size: small;">Blog</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 style="line-height: 3;">Policies</h5>
+                    <p style="font-size: small;">Terms and Conditions</p>
+                    <p style="font-size: small;">Privacy Policy</p>
+                    <p style="font-size: small;">Cancellation</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 style="line-height: 3;">More</h5>
+                    <p style="font-size: small;">FAQ</p>
+                    <p style="font-size: small;">Contact Us</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <h5 style="line-height: 3;">Karachi Office</h5>
+                    <p style="font-size: x-small;">Al Baraka House 162 Bangalore Town, Main Shahrah-e-Faisal, Karachi, Pakistan</p>
+                    <p style="font-size: x-small;">PABX:+92.(21).3431.5851 FAX:+92.(21).3454.6465 Email:info@albaraka.com.pk</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 text-center">
+                    <p style="font-size:small;font-weight: bold;display: inline-block; margin-right: 3%;">Connect with us on:</p>
+                    <img src="./img/footer_icon/facebook.png" alt="facebook" width="5%" style="margin-right: 3%;">
+                    <img src="./img/footer_icon/twitter.png" alt="twitter" width="5%" style="margin-right: 3%;">
+                    <img src="./img/footer_icon/instagram.png" alt="instagram" width="5%" style="margin-right: 3%;">
+                    <img src="./img/footer_icon/google.png" alt="google" width="5%" style="margin-right: 3%;">
+                    <img src="./img/footer_icon/pinterest.png" alt="pinterest" width="5%">
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="./img/footer_icon/phone.png" alt="phone"  width="5%">
+                    <p style="display: inline-block;">111-222-333</p>
+                    <img src="./img/footer_icon/email.png" alt="email"  width="5%" style="margin-left: 3%;">
+                    <p style="display: inline-block; font-weight: lighter;">customercare@eventmanagment.com</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p style="color: #6e7b80; font-size: small;">All rights reserved &copy; 2017</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
